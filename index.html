@@ -34,80 +34,51 @@
     <!-- header section -->
     <header>
       <!-- Nav bar -->
-      <div class="navbar bg-base-100 mt-3 lg:px-[140px]">
-        <div class="navbar-start">
-          <a class="hidden lg:block"
-            ><img src="./c2-assets/logo-header.png" alt=""
-          /></a>
-          <a class="btn btn-ghost text-xl lg:hidden sm:block w-[150px]"
-            ><img src="./c2-assets/logo.jpg" alt=""
-          /></a>
-        </div>
-        <div class="navbar-center hidden lg:flex ">
-          <ul class="menu menu-horizontal px-1">
-            <li><a class="text-[#111111]">Product</a></li>
-            <li><a class="text-[#111111]">About</a></li>
-            <li><a class="text-[#111111]">Service</a></li>
-            <li><a class="text-[#111111]">Contact US</a></li>
-          </ul>
-        </div>
+      <nav>
+        <div
+          class="navbar flex justify-between  border-b-[2px] border-[#179800] lg:border-none lg:px-[140px] lg:py-4"
+        >
+          <!-- lg-navbar -->
 
-        <div class="flex justify-around w-1/2 mt-5">
-          <div class="dropdown  ml-[60px]">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-7 w-7"
-                fill="none"
-                viewBox="0 0 20 20"
-                stroke="green"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </div>
-       
+          <div class="navbar-start hidden lg:flex gap-2 items-center">
+            <img src="./c2-assets/logo-header.png" alt="logo-header" />
+          </div>
+          <div class="navbar-center hidden lg:flex">
             <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow -ml-[100px]"
+              class="menu menu-horizontal px-1 text-xl lg:flex font-normal gap-[2rem]"
             >
-              <li><a class="text-[#111111]">product</a></li>
-              <li><a class="text-[#111111]">About</a></li>
-              <li><a class="text-[#111111]">Service</a></li>
-              <li><a class="text-[#111111]">Contact US</a></li>
+              <li><a href="#">Product</a></li>
+              
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Contact us</a></li>
             </ul>
           </div>
-          <!-- icon -->
-          <div class="flex items-center hidden lg:block">
-            <i class="bx bx-cart text-2xl"></i>
-            <i class="bx bx-search ml-3 text-2xl"></i>
-          </div>
-          <!-- button  -->
-          <div class="hidden lg:block">
+          <div class="navbar-end hidden lg:flex gap-4 font-light">
+            <i class='bx bx-search-alt-2 text-2xl '></i>
+            <i class='bx bxs-cart-alt text-2xl' ></i>
             <button
-              class="border border-green-500 py-[10px] px-[15px] rounded-xl font-bold"
+              class="border border-[#179800] font-normal rounded-lg py-2.5 px-7 hover:bg-[#179800] hover:border-none hover:text-white"
             >
-              login
+              Login
             </button>
-          </div>
-
-          <div class="hidden lg:block ml-3">
-            <button class="border p-[15px] rounded-xl text-white bg-[#179800]">
+            <button
+              class="bg-[#179800] font-normal text-white rounded-lg py-2.5 px-7 border hover:border-[#179800] hover:bg-transparent hover:text-black"
+            >
               Register
             </button>
           </div>
-        </div>
-      </div>
-       <div class="border-b-[2px] border-green-500 lg:hidden block mt-4">
 
-       </div>
+          <!-- responsive navbar -->
+          <div class="flex lg:hidden justify-between w-full px-4 py-3">
+            <img src="./c2-assets/logo.jpg" alt="" class="w-[48px]" />
+            <i class='bx bx-menu text-[30px] text-[#179800]'></i>
+          </div>
+        </div>
+      </nav>
+       
       <!-- banner section -->
       
-      <div class="mt-20 bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
+      <div class="mt-10 bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
 
         <div class="hero">
           <div class="hero-content text-center">
@@ -116,7 +87,8 @@
                 Freshness <span class="text-[#179800]">You Can Count</span> On,
                 Prices You’ll Love!
               </h1>
-              <p class="py-6 animate-pulse	">
+              <p class="py-6 animate-bounce
+	">
                 Shop your daily essentials at unbeatable prices. From fresh
                 produce to pantry staples, we’ve got you covered every day!
               </p>
